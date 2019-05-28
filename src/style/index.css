@@ -1,0 +1,167 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input,
+a,
+span,
+figure,
+figcaption {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+  width: 100%;
+  font-size: 0px;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0px;
+}
+select,
+input {
+  vertical-align: middle;
+  display: block;
+}
+select,
+input,
+textarea {
+  font-size: 13px;
+  margin: 0px;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+button {
+  outline: none;
+}
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+}
+.clearit {
+  clear: both;
+  height: 0px;
+  font-size: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+header,
+div,
+nav,
+li,
+input,
+section,
+figure,
+table,
+select,
+figcaption,
+footer,
+td,
+p,
+a,
+img {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: block;
+  color: #000;
+}
+body {
+  margin: 0 auto;
+  position: relative;
+}
+body,
+html {
+  margin: 0 auto;
+  min-width: 1200px;
+  transition:all .5s;
+  background-color: #f4f4f4;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.fl {
+  float: left;
+}
+.rl {
+  float: right;
+}
+
+
+.el-main{
+  max-width: 1200px;
+  margin:0 auto;
+  margin-top:100px;
+  padding:0 !important;
+  overflow: visible !important;
+ 
+}
+.el-divider .el-divider__text{
+  font-size:18px;
+}
+.el-main .el-breadcrumb{
+  margin-bottom: 2%;
+}
+.el-main>#indexs{
+  float: none;
+  width:100%;
+}
+.el-main>div:nth-child(2){
+  float: left;
+  width:70%;
+}
