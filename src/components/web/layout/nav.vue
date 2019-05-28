@@ -18,7 +18,7 @@
         <el-main class="clearfix">
             <el-breadcrumb separator="/">
                 <el-breadcrumb-item v-for="(item)  in levelList" :key="item.path">
-                    <router-link :to="item.redirect||item.path">{{item.name}}</router-link>
+                    <router-link :to="item.redirect||item.path">{{item.meta.title}}</router-link>
                 </el-breadcrumb-item>
             </el-breadcrumb>
 
@@ -121,11 +121,11 @@ export default {
         getBreadcrumb() {
             let matched = this.$route.matched.filter(item => item.name)
             const first = matched[0]
-            if (first && first.name !== '首页') {
-                matched = [{path: '/', name: '首页' }].concat(matched)
+            if (first && first.name !== 'webHome') {
+                matched = [{path: '/', name: 'webHome', meta:{title:'首页'}}].concat(matched)
             }
             this.levelList = matched;
-           
+           console.log(this.levelList)
         }
     },
     mounted(){

@@ -1,6 +1,6 @@
 <template>
     <div id="backstage">
-        <!-- <left></left> -->
+        <left></left>
         <router-view class="con"></router-view>
     </div>
 </template>

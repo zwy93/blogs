@@ -21,7 +21,8 @@ for(let i = 0 ; i < breadcrumb.length ; i ++){
 console.log(routerList);
 routerList.beforeEach((to, from, next) => {
   console.log(to)
-  
+  console.log(from)
+  next()
 })
 
 /* eslint-disable no-new */

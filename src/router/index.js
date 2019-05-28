@@ -33,38 +33,59 @@ const routerList = new Router({
       children:[
         {
           path: '/', 
-          name:'首页',
-          component: indexs
+          name:'webHome',
+          component: indexs,
+          meta: {
+            title: '首页',
+          }
         },
         {
           path: '/web', 
-          name:'前端小记',
+          name:'webWeb',
           component: web,
           redirect:'/weblist',
+          meta: {
+            title: '前端小记',
+          },
           children:[
             {
               path:'/webpart',
-              name:'文章详情',
-              component:webpart
+              name:'webPart',
+              component:webpart,
+              meta: {
+                title: '文章详情',
+              }
             },
             {
               path:'/weblist',
-              component:weblist
+              component:weblist,
+              meta: {
+                title: '前端小记',
+              }
             },
           ]
         },{
           path:'/resume',
-          name:'个人简介',
-          component : resume
+          name:'webResume',
+          component : resume,
+          meta: {
+            title: '个人简介',
+          }
         },
         {
           path:'/timeShaft',
-          name:'时间轴',
-          component: timeShaft
+          name:'webTimeShaft',
+          component: timeShaft,
+          meta: {
+            title: '时间轴',
+          }
         },{
           path:'/mesBoard',
-          name:'留言板',
-          component:mesBoard
+          name:'webMesBoard',
+          component:mesBoard,
+          meta: {
+            title: '留言板',
+          }
         }
         
       ]
@@ -79,32 +100,53 @@ const routerList = new Router({
       children:[
         {
           path: '/', 
-          name:'首页',
-          component: backindex
+          name:'backindex',
+          component: backindex,
+          meta: {
+            title: '首页',
+          }
         },{
           path: '/backStage/web', 
-          name:'前端小记',
-          component: backWeb
+          name:'backWeb',
+          component: backWeb,
+          meta: {
+            title: '前端小记',
+          }
         },{
           path: '/backStage/resume', 
-          name:'个人简介',
-          component: backresume
+          name:'backresume',
+          component: backresume,
+          meta: {
+            title: '个人简介',
+          }
         },{
           path: '/backStage/timeShaft', 
-          name:'时间轴',
-          component: backtimeShaft
+          name:'backtimeShaft',
+          component: backtimeShaft,
+          meta: {
+            title: '时间轴',
+          }
         },{
           path: '/backStage/mesBoard', 
-          name:'留言板',
-          component: backmesBoard
+          name:'backmesBoard',
+          component: backmesBoard,
+          meta: {
+            title: '留言板',
+          }
         },{
           path:'/test',
-          name:'功能测试',
-          component:test
+          name:'test',
+          component:test,
+          meta: {
+            title: '功能测试',
+          }
         },{
           path:'/test1',
-          name:'功能测试',
-          component:test1
+          name:'test1',
+          component:test1,
+          meta: {
+            title: '功能测试',
+          }
         }
       ]
     },

@@ -136,6 +136,7 @@ export default {
                         float: left;
                         font-size:14px;
                         text-align: left;
+                        margin-left: 10px;
                         b{
                             color:#d33;
                         }
